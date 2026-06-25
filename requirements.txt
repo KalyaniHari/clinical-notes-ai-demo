@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+joblib
+# Optional: enables LLM-based medication extraction when OPENAI_API_KEY is set
+# openai
+# langchain
+# langchain-openai
