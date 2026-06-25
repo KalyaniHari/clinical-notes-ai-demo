@@ -32,6 +32,22 @@ Built on **synthetic data only** — no real patient information is used.
 └── requirements.txt
 ```
 
+## Architecture
+
+```mermaid
+flowchart LR
+    N[Clinical note] --> M[Medication extractor]
+    F[Patient features] --> X[XGBoost model]
+    M --> O[Medications]
+    X --> P[30-day readmission risk]
+    subgraph API[FastAPI service]
+      M
+      X
+    end
+```
+
+**Skills demonstrated:** feature engineering, training & evaluating an XGBoost classifier, NLP information extraction, and serving both as a FastAPI inference API.
+
 ## Setup
 
 ```bash
